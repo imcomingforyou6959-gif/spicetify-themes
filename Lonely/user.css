@@ -1,579 +1,458 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-  --font: 'figtree';
-  --gap: 12px;
-  --border-thickness: 1px;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --blur-amount: 16px;
-  --panel-backdrop-filter: blur(var(--blur-amount));
-  --snowy-background: url('https://images.unsplash.com/photo-1543628994-7dd6a0a8ba5c?q=80&w=2000&auto=format&fit=crop') no-repeat center center fixed;
-  --snowy-background-size: cover;
+.button-module__button___hf2qg_marketplace {
+  color: var(--spice-subtext);
 }
 
-* {
-  font-family: var(--font), 'gg sans', 'Noto Sans', sans-serif !important;
-  box-sizing: border-box !important;
+.os-scrollbar {
+  --os-handle-border-radius: 16px !important;
+  --os-size: 8px !important;
 }
 
-body {
-  background: var(--snowy-background) !important;
-  background-size: var(--snowy-background-size) !important;
-  backdrop-filter: blur(2px) !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
+.main-entityHeader-backgroundColor {
+  background-color: #00000000 !important;
 }
 
-.Root__main-view {
-  background: rgba(22, 16, 20, 0.45) !important;
-  backdrop-filter: var(--panel-backdrop-filter) !important;
-  -webkit-backdrop-filter: var(--panel-backdrop-filter) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-radius: var(--radius-lg) !important;
-  margin: var(--gap) !important;
-  padding: 0 !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
-  overflow: hidden !important;
-}
-.Root__main-view:hover {
-  border-color: rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4) !important;
+.main-home-homeHeader {
+  background-color: #00000000 !important;
+  background-image: none !important;
 }
 
-.Root__nav-bar {
-  background: rgba(22, 16, 20, 0.5) !important;
-  backdrop-filter: var(--panel-backdrop-filter) !important;
-  -webkit-backdrop-filter: var(--panel-backdrop-filter) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-radius: var(--radius-lg) !important;
-  margin: var(--gap) 0 var(--gap) var(--gap) !important;
-  padding: 8px 4px !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+.Root__top-container {
+  background: linear-gradient(180deg, var(--spice-sidebar-alt) 0%, var(--spice-sidebar) 100%);
+  overflow: hidden;
+  grid-template-areas:
+    "left-sidebar    main-view         now-playing-bar"
+    "left-sidebar    main-view         right-sidebar";
+  grid-template-rows: auto auto 1fr;
 }
-.Root__nav-bar:hover {
-  border-color: rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4) !important;
+
+.global-nav .Root__top-container {
+  grid-template-areas:
+    "top-banner global-nav global-nav"
+    "left-sidebar main-view now-playing-bar"
+    "left-sidebar main-view right-sidebar" !important;
+}
+
+.Root__globalNav {
+  background-color: #00000000 !important;
+}
+
+.ffFwfKcPDbmAPLXzxzKq:before {
+  background-color: #00000000 !important;
+}
+
+.I0bVSxvqA3rm5HvciMap {
+  --bgColor: #00000000 !important;
+}
+
+.I0bVSxvqA3rm5HvciMap::after {
+  --bgColor: #00000000 !important;
+}
+
+.PeLrpasyfBW8ql_bmoAi {
+  background-color: #00000000 !important;
+  background-image: none !important;
+}
+
+.PkOz5g82CaoKk1J3GX0e  {
+  background-color: #00000000 !important;
+  background-image: none !important;
+}
+
+.sv5suqIPUwjgUF_BzM41 {
+  transform: none !important;
+}
+
+.Root__right-sidebar {
+  width: min-content;
+  height: auto !important;
+  min-height: 100% !important;
 }
 
 .Root__now-playing-bar {
-  background: rgba(22, 16, 20, 0.5) !important;
-  backdrop-filter: var(--panel-backdrop-filter) !important;
-  -webkit-backdrop-filter: var(--panel-backdrop-filter) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-radius: var(--radius-lg) !important;
-  margin: 0 var(--gap) var(--gap) var(--gap) !important;
-  padding: 8px 12px !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
-}
-.Root__now-playing-bar:hover {
-  border-color: rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4) !important;
+  width: var(--panel-width);
 }
 
-.Root__main-view,
-.Root__nav-bar,
-.Root__now-playing-bar,
-.main-type-mesto,
-.main-type-ballad,
-.main-type-canon,
-.main-type-type,
-.main-type-mestoBold,
-.main-type-balladBold,
-.main-type-canonBold,
-.main-type-typeBold,
-.main-type-mestoRegular,
-.main-type-balladRegular,
-.main-type-canonRegular,
-.main-type-typeRegular,
-.main-type-mestoMedium,
-.main-type-balladMedium,
-.main-type-canonMedium,
-.main-type-typeMedium,
-.artist-artistName,
-.tracklist-row__artist-name,
-.tracklist-row__album-name,
-.tracklist-row__duration,
-.tracklist-row__track-number,
-.tracklist-row__added-date,
-.tracklist-row__play-count,
-.tracklist-row__popularity,
-.tracklist-row__context-menu,
-.tracklist-row__more,
-.tracklist-row__plus,
-.tracklist-row__heart,
-.tracklist-row__pin,
-.tracklist-row__unpin,
-.tracklist-row__add,
-.tracklist-row__remove,
-.tracklist-row__save,
-.tracklist-row__unsave,
-.tracklist-row__download,
-.tracklist-row__undownload,
-.tracklist-row__share,
-.tracklist-row__edit,
-.tracklist-row__delete,
-.tracklist-row__move,
-.tracklist-row__copy,
-.tracklist-row__paste,
-.tracklist-row__cut,
-.tracklist-row__rename,
-.tracklist-row__reorder,
-.tracklist-row__sort,
-.tracklist-row__filter,
-.tracklist-row__search,
-.tracklist-row__find,
-.tracklist-row__replace,
-.tracklist-row__replace-all,
-.tracklist-row__undo,
-.tracklist-row__redo,
-.tracklist-row__select,
-.tracklist-row__select-all,
-.tracklist-row__select-none,
-.tracklist-row__select-invert,
-.tracklist-row__select-by,
-.tracklist-row__deselect,
-.tracklist-row__deselect-all,
-.tracklist-row__deselect-none,
-.tracklist-row__deselect-invert,
-.tracklist-row__invert-selection,
-.tracklist-row__invert-selection-all,
-.tracklist-row__invert-selection-none,
-.tracklist-row__invert-selection-invert,
-.tracklist-row__invert-selection-by,
-.tracklist-row__invert-selection-from,
-.tracklist-row__invert-selection-to,
-.tracklist-row__invert-selection-between,
-.tracklist-row__invert-selection-with,
-.tracklist-row__invert-selection-without,
-.tracklist-row__invert-selection-excluding,
-.tracklist-row__invert-selection-including,
-.tracklist-row__invert-selection-except,
-.tracklist-row__invert-selection-except-from,
-.tracklist-row__invert-selection-except-to,
-.tracklist-row__invert-selection-except-between,
-.tracklist-row__invert-selection-except-with,
-.tracklist-row__invert-selection-except-without,
-.tracklist-row__invert-selection-except-excluding,
-.tracklist-row__invert-selection-except-including,
-.tracklist-row__invert-selection-except-except,
-.tracklist-row__invert-selection-except-except-from,
-.tracklist-row__invert-selection-except-except-to,
-.tracklist-row__invert-selection-except-except-between,
-.tracklist-row__invert-selection-except-except-with,
-.tracklist-row__invert-selection-except-except-without,
-.tracklist-row__invert-selection-except-except-excluding,
-.tracklist-row__invert-selection-except-except-including,
-.tracklist-row__invert-selection-except-except-except,
-.tracklist-row__invert-selection-except-except-except-from,
-.tracklist-row__invert-selection-except-except-except-to,
-.tracklist-row__invert-selection-except-except-except-between,
-.tracklist-row__invert-selection-except-except-except-with,
-.tracklist-row__invert-selection-except-except-except-without,
-.tracklist-row__invert-selection-except-except-except-excluding,
-.tracklist-row__invert-selection-except-except-except-including,
-.tracklist-row__invert-selection-except-except-except-except,
-.tracklist-row__invert-selection-except-except-except-except-from,
-.tracklist-row__invert-selection-except-except-except-except-to,
-.tracklist-row__invert-selection-except-except-except-except-between,
-.tracklist-row__invert-selection-except-except-except-except-with,
-.tracklist-row__invert-selection-except-except-except-except-without,
-.tracklist-row__invert-selection-except-except-except-except-excluding,
-.tracklist-row__invert-selection-except-except-except-except-including,
-.tracklist-row__invert-selection-except-except-except-except-except {
-  color: var(--text) !important;
+.main-topBar-background {
+  background-color: var(--spice-highlight) !important;
 }
 
-/* Subtext */
-.main-type-mesto,
-.main-type-ballad,
-.main-type-canon,
-.main-type-type,
-.main-type-mestoRegular,
-.main-type-balladRegular,
-.main-type-canonRegular,
-.main-type-typeRegular,
-.main-type-mestoMedium,
-.main-type-balladMedium,
-.main-type-canonMedium,
-.main-type-typeMedium,
-.artist-artistName,
-.artist-artistName > span {
-  color: var(--subtext) !important;
+.Root__nav-bar {
+  background-color: #00000000 !important;
 }
 
-button,
-.Button,
-.Button-sm,
-.Button-md,
-.Button-lg,
-.Button-primary,
-.Button-secondary,
-.Button-tertiary,
-.Button-danger,
-.Button-success,
-.Button-warning,
-.Button-info,
-.Button-outline,
-.Button-link,
-.Button-icon,
-.Button-transparent,
-.Button-ghost,
-.Button-filled,
-.Button-outlined,
-.Button-text,
-.Button-raised,
-.Button-flat,
-.Button-stroked,
-.Button-rounded,
-.Button-square,
-.Button-circle,
-.Button-pill,
-.Button-block,
-.Button-full,
-.Button-half,
-.Button-quarter,
-.Button-small,
-.Button-medium,
-.Button-large,
-.Button-extra-large,
-.Button-huge,
-.Button-giant,
-.Button-mega,
-.Button-ultra,
-.Button-super,
-.Button-uber,
-.Button-master,
-.Button-commander,
-.Button-legendary,
-.Button-epic,
-.Button-rare,
-.Button-uncommon,
-.Button-common,
-.Button-basic,
-.Button-standard,
-.Button-premium,
-.Button-deluxe,
-.Button-elite,
-.Button-ultimate,
-.Button-final,
-.Button-absolute,
-.Button-omnipotent,
-.Button-omniscient,
-.Button-omnipresent,
-.Button-infinite,
-.Button-eternal,
-.Button-divine,
-.Button-godlike,
-.Button-transcendent,
-.Button-supreme,
-.Button-sovereign,
-.Button-ruler,
-.Button-monarch,
-.Button-emperor,
-.Button-king,
-.Button-queen,
-.Button-prince,
-.Button-princess,
-.Button-duke,
-.Button-duchess,
-.Button-earl,
-.Button-countess,
-.Button-baron,
-.Button-baroness,
-.Button-knight,
-.Button-dame,
-.Button-lord,
-.Button-lady,
-.Button-sir,
-.Button-madam,
-.Button-mister,
-.Button-miss,
-.Button-ms,
-.Button-mrs,
-.Button-mx,
-.Button-dr,
-.Button-prof,
-.Button-rev,
-.Button-hon,
-.Button-rt,
-.Button-very,
-.Button-most,
-.Button-right,
-.Button-left,
-.Button-up,
-.Button-down,
-.Button-forward,
-.Button-back,
-.Button-next,
-.Button-previous,
-.Button-first,
-.Button-last,
-.Button-beginning,
-.Button-end,
-.Button-start,
-.Button-finish,
-.Button-open,
-.Button-close,
-.Button-enter,
-.Button-exit,
-.Button-go,
-.Button-stop,
-.Button-pause,
-.Button-play,
-.Button-skip,
-.Button-repeat,
-.Button-shuffle,
-.Button-like,
-.Button-unlike,
-.Button-favorite,
-.Button-unfavorite,
-.Button-star,
-.Button-unstar,
-.Button-heart,
-.Button-unheart,
-.Button-thumbs-up,
-.Button-thumbs-down,
-.Button-check,
-.Button-uncheck,
-.Button-approve,
-.Button-reject,
-.Button-accept,
-.Button-decline,
-.Button-confirm,
-.Button-cancel,
-.Button-submit,
-.Button-reset,
-.Button-clear,
-.Button-wipe,
-.Button-purge,
-.Button-delete,
-.Button-remove,
-.Button-destroy,
-.Button-obliterate,
-.Button-annihilate,
-.Button-erase,
-.Button-exterminate,
-.Button-vaporize,
-.Button-nuke,
-.Button-nuke-all,
-.Button-nuke-everything,
-.Button-nuke-everything-forever,
-.Button-nuke-everything-forever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever,
-.Button-nuke-everything-forever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever-and-ever {
-  background: rgba(211, 116, 139, 0.5) !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-  color: var(--text) !important;
-  border-radius: var(--radius-md) !important;
-  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+.main-yourLibraryX-libraryContainer {
+  background: none !important;
 }
 
-button:hover,
-.Button:hover {
-  background: rgba(211, 116, 139, 0.7) !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 16px rgba(211, 116, 139, 0.25) !important;
+.main-trackList-trackListRow:hover {
+  background-color: var(--spice-highlight);
 }
 
-button:active,
-.Button:active {
-  transform: scale(0.96) !important;
-  background: rgba(211, 116, 139, 0.8) !important;
+.main-playPauseButton-button {
+  background-color: var(--spice-button);
 }
 
-button:disabled,
-.Button:disabled {
-  background: rgba(61, 42, 50, 0.4) !important;
-  color: rgba(200, 188, 192, 0.5) !important;
-  backdrop-filter: blur(2px) !important;
-  border-color: rgba(255, 255, 255, 0.04) !important;
-  box-shadow: none !important;
-  transform: none !important;
-  cursor: not-allowed !important;
+.rX_OmqCngvY5ZCoYBZgb {
+  background-color: #00000000 !important;
 }
 
-.tracklist-row:hover,
-.playlist-row:hover,
-.album-row:hover,
-.artist-row:hover,
-.tracklist-row__selected,
-.playlist-row__selected,
-.album-row__selected,
-.artist-row__selected,
-.tracklist-row--active,
-.playlist-row--active,
-.album-row--active,
-.artist-row--active {
-  background: rgba(200, 188, 192, 0.15) !important;
-  backdrop-filter: blur(2px) !important;
-  -webkit-backdrop-filter: blur(2px) !important;
-  border-radius: var(--radius-sm) !important;
-  transition: background 0.2s ease !important;
+.main-yourLibraryX-entryPoints {
+  background-color: #00000000 !important;
 }
 
-.tracklist-row__selected *,
-.playlist-row__selected *,
-.album-row__selected *,
-.artist-row__selected * {
-  color: var(--text) !important;
+.marketplace-header {
+  background-color: #00000000 !important;
 }
 
-::-webkit-scrollbar {
-  width: 4px !important;
-  height: 4px !important;
+.EmeHQXR87mUskYK6xEde {
+  background-color: #00000000 !important;
 }
 
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.02) !important;
-  border-radius: 10px !important;
+.lyrics-lyrics-background {
+  background-color: #00000000 !important;
 }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(211, 116, 139, 0.4) !important;
-  border-radius: 10px !important;
-  transition: background 0.2s ease !important;
+.main-actionBarBackground-background {
+  background-image: none;
+  background-color: #00000000 !important;
+  animation: none !important;
+  -webkit-animation: none !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(211, 116, 139, 0.7) !important;
+.main-entityHeader-overlay {
+  background: none !important;
 }
 
-.notification {
-  background: rgba(211, 116, 139, 0.3) !important;
-  backdrop-filter: var(--panel-backdrop-filter) !important;
-  -webkit-backdrop-filter: var(--panel-backdrop-filter) !important;
-  color: var(--text) !important;
-  border-radius: var(--radius-md) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+.main-entityHeader-background.main-entityHeader-gradient {
+  opacity: 0.5;
+  animation: none !important;
 }
 
-.notification-error {
-  background: rgba(216, 58, 65, 0.4) !important;
-  backdrop-filter: var(--panel-backdrop-filter) !important;
-  -webkit-backdrop-filter: var(--panel-backdrop-filter) !important;
-  color: var(--text) !important;
-  border-radius: var(--radius-md) !important;
-  border: 1px solid rgba(216, 58, 65, 0.2) !important;
-  box-shadow: 0 4px 20px rgba(216, 58, 65, 0.15) !important;
+.main-entityHeader-background.main-entityHeader-overlay:after {
+  background-image: none !important;
+  animation: none !important;
+  -webkit-animation: none !important;
 }
 
-.card,
-.Card,
-.card-shadow,
-.Card-shadow,
-.dropdown,
-.Dropdown,
-.menu,
-.Menu,
-.popover,
-.Popover,
-.tooltip,
-.Tooltip {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  background: rgba(22, 16, 20, 0.4) !important;
-  border: 1px solid rgba(255, 255, 255, 0.06) !important;
-  border-radius: var(--radius-md) !important;
+.pUNc2aOeOQANHrhYa1GU .RDZ61ETnag1ilfZTkVxe {
+  color: #00000000 !important;
 }
 
-input,
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="tel"],
-input[type="url"],
-input[type="date"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="color"],
-select,
-textarea,
-.search-input,
-.search-input__input,
-.search-input__input-wrapper {
-  background: rgba(255, 255, 255, 0.06) !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-radius: var(--radius-md) !important;
-  color: var(--text) !important;
-  padding: 6px 12px !important;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
-  outline: none !important;
+.playlist-playlist-playlistContent {
+  background: #00000000 !important;
 }
 
-input:focus,
-input[type="text"]:focus,
-input[type="search"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="date"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="color"]:focus,
-select:focus,
-textarea:focus,
-.search-input:focus,
-.search-input__input:focus,
-.search-input__input-wrapper:focus {
-  border-color: rgba(211, 116, 139, 0.5) !important;
-  box-shadow: 0 0 0 3px rgba(211, 116, 139, 0.1) !important;
+.UrfDp0_mKGL9hkfh9g_R,
+.UrfDp0_mKGL9hkfh9g_R:before,
+.mzBZbIt7NDzzTffimVhn,
+.WBFaUw_oOfN2m4aTxggt,
+.main-nowPlayingView-contextItemInfo:before,
+.playlist-playlist-actionBarBackground-background,
+.main-entityHeader-backgroundColor,
+.Root__now-playing-bar {
+  background: none !important;
 }
 
-::placeholder {
-  color: rgba(200, 188, 192, 0.5) !important;
+.sl_aPp6GDg05ItSfmsS7 {
+  display: none;
 }
 
-.misc {
-  color: var(--misc) !important;
+.main-nowPlayingBar-nowPlayingBar {
+  min-height: 400px;
 }
 
-* {
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease !important;
+.main-nowPlayingBar-container {
+  flex-direction: column;
+  min-width: 280px;
+  max-width: 420px;
+}
+
+.main-nowPlayingBar-nowPlayingBar {
+  flex-direction: column;
+}
+
+[data-right-sidebar-hidden] .Root__main-view {
+  grid-area: main-view/main-view/main-view/span 1;
+}
+
+.Root__main-view {
+  background-color: #00000000 !important;
+}
+
+.main-nowPlayingBar-center {
+  width: 100%;
+}
+
+.main-nowPlayingBar-left {
+  width: 100%;
+}
+
+.HD9s7U5E1RLSWKpXmrqx {
+  background-color: #00000000;
+  margin: auto;
+  width: 100%;
+}
+
+.main-nowPlayingWidget-coverArt .cover-art {
+  height: 220px !important;
+  width: 220px !important;
+  margin: auto;
+  background-color: #00000000;
+  box-shadow: 0 0 0px var(--spice-rgb-shadow);
+}
+
+.main-nowPlayingWidget-coverArt .cover-art img {
+  border-radius: 50%;
+  animation: spin 25s linear infinite;
+  animation-play-state: paused;
+  background-color: #00000000;
+  box-shadow: 0 0 5px 5px var(--spice-text);
+}
+
+[data-testid="now-playing-bar"]:has(
+  [data-testid="control-button-playpause"][aria-label="Pause"]
+)
+  .main-nowPlayingWidget-coverArt
+  .cover-art
+  img {
+  animation-play-state: running !important;
+}
+
+.main-coverSlotCollapsed-container {
+  width: 100%;
+  height: 100%;
+}
+
+.main-coverSlotCollapsed-container> :first-child {
+  width: 100%;
+  height: 100%;
+}
+
+.main-coverSlotCollapsed-container> :first-child> :first-child {
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+}
+
+.main-nowPlayingWidget-coverArt {
+  width: 100%;
+  height: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #00000000;
+}
+
+.main-nowPlayingWidget-nowPlaying {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-coverSlotCollapsed-expandButton {
+  right: 25%;
+}
+
+.player-controls__buttons.player-controls__buttons--new-icons {
+  order: 2;
+}
+
+.playback-bar {
+  order: 1;
+}
+
+.main-nowPlayingBar-right {
+  width: 100%;
+}
+
+.main-nowPlayingBar-extraControls {
+  justify-content: space-evenly;
+}
+
+.main-tag-container {
+  color: var(--spice-sidebar);
+}
+
+.starrynight-bg-container {
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.ffFwfKcPDbmAPLXzxzKq {
+  background-color: #00000000 !important;
+}
+
+button[data-testid="cover-art-button"] {
+  height: 220px !important;
+  width: 220px !important;
+  margin: auto;
+  background-color: #00000000;
+  box-shadow: 0 0 0px var(--spice-rgb-shadow);
+  display: contents;
+}
+
+@keyframes twinkle1 {
+  0% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  20% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  40% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  60% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  80% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  100% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+}
+
+@keyframes twinkle2 {
+  0% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  20% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  40% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  60% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  80% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  100% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+}
+
+@keyframes twinkle3 {
+  0% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  20% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  40% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  60% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  80% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  100% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+}
+
+@keyframes twinkle4 {
+  0% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  20% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+
+  40% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  60% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  80% {
+    box-shadow: 0px 0px 8px 2px var(--spice-star-glow);
+  }
+
+  100% {
+    box-shadow: 0px 0px -8px 2px var(--spice-star-glow);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+Pure CSS Shooting Star Animation Effect Copyright (c) 2021 by Delroy Prithvi (https://codepen.io/delroyprithvi/pen/LYyJROR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+.shootingstar {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--spice-shooting-star);
+  border-radius: 50%;
+  animation: animate 3s linear;
+  left: initial;
+  z-index: -1;
+}
+
+.shootingstar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--spice-shooting-star), transparent);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(315deg) translateX(-1500px);
+    opacity: 0;
+  }
 }
